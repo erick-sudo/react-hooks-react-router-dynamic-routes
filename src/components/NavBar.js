@@ -5,9 +5,11 @@ function NavBar() {
   return (
     <div
       style={{
-        borderBottom: "2px solid black",
+        borderBottom: "3px solid maroon",
         paddingBottom: "10px",
         marginBottom: "12px",
+        letterSpacing: "5px",
+        fontSize: "1.5em"
       }}
     >
       <NavLink style={{ marginRight: "10px" }} to="/">
