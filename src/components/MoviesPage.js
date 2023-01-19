@@ -6,13 +6,12 @@ import MoviesShow from "./MovieShow";
 function MoviesPage({ movies }) {
 
   const match = useRouteMatch();
-  console.log(match);
+  
   return (
     <div>
       <MoviesList movies={movies} />
-
-      <Route>
-        <MoviesShow />
+      <Route path={`${match.url}/:movieId`}>
+        <MoviesShow movies={movies} />
       </Route>
     </div>
   );
